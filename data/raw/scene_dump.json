@@ -1,0 +1,940 @@
+{
+  "meta": {
+    "format_version": 4,
+    "scene_root": "/Maze",
+    "source": "CoppeliaSim via ZMQ Remote API",
+    "counts": {
+      "walls": 40,
+      "floors": 6,
+      "targets": 6,
+      "visual_targets": 6
+    },
+    "roots": {
+      "scene_root": "/Maze",
+      "has_room_borders": true,
+      "has_maze": true,
+      "has_floors": true,
+      "has_score": true,
+      "has_score_dummy": true,
+      "has_score_cuboid": true
+    },
+    "summary": {
+      "start_target": "Start_point_dummy",
+      "point_targets": [
+        "Point_dummy[0]",
+        "Point_dummy[1]",
+        "Point_dummy[2]"
+      ],
+      "end_target": "End_point_dummy",
+      "fake_target": "Fake_point_dummy",
+      "visual_start": "Start_point_cuboid_score",
+      "visual_points": [
+        "Point_cuboid_score[0]",
+        "Point_cuboid_score[1]",
+        "Point_cuboid_score[2]"
+      ],
+      "visual_end": "End_point_cuboid_score",
+      "visual_fake": "Fake_point_cuboid_score"
+    },
+    "diagnostics": {
+      "walls": {
+        "raw_wall_candidates": 40,
+        "final_walls": 40,
+        "duplicate_walls_removed": 0,
+        "duplicate_wall_paths": [],
+        "skipped_non_wall_shapes": [
+          "/RoomBorders/HorizontalBorder/room_border_horizontal/240cmHighWall100cm/visible",
+          "/RoomBorders/HorizontalBorder/room_border_horizontal/240cmHighWall100cm/visible",
+          "/RoomBorders/HorizontalBorder/room_border_horizontal/240cmHighWall100cm/visible",
+          "/RoomBorders/HorizontalBorder/room_border_horizontal/240cmHighWall100cm/visible",
+          "/RoomBorders/HorizontalBorder/room_border_horizontal/240cmHighWall400cm/visible",
+          "/RoomBorders/HorizontalBorder/room_border_horizontal/240cmHighWall400cm/visible",
+          "/RoomBorders/HorizontalBorder/room_border_horizontal/240cmHighWall400cm/visible",
+          "/RoomBorders/HorizontalBorder/room_border_horizontal/240cmHighWall400cm/visible",
+          "/RoomBorders/VerticalBorder/room_border_vertical/240cmHighWall100cm/visible",
+          "/RoomBorders/VerticalBorder/room_border_vertical/240cmHighWall100cm/visible",
+          "/RoomBorders/VerticalBorder/room_border_vertical/240cmHighWall100cm/visible",
+          "/RoomBorders/VerticalBorder/room_border_vertical/240cmHighWall100cm/visible",
+          "/RoomBorders/VerticalBorder/room_border_vertical/240cmHighWall400cm/visible",
+          "/RoomBorders/VerticalBorder/room_border_vertical/240cmHighWall400cm/visible",
+          "/RoomBorders/VerticalBorder/room_border_vertical/240cmHighWall400cm/visible",
+          "/RoomBorders/VerticalBorder/room_border_vertical/240cmHighWall400cm/visible",
+          "/Maze/80cmHighWall100cm/visible",
+          "/Maze/80cmHighWall100cm/visible",
+          "/Maze/80cmHighWall100cm/visible",
+          "/Maze/80cmHighWall100cm/visible",
+          "/Maze/80cmHighWall100cm/visible",
+          "/Maze/80cmHighWall100cm/visible",
+          "/Maze/80cmHighWall100cm/visible",
+          "/Maze/80cmHighWall100cm/visible",
+          "/Maze/80cmHighWall200cm/visible",
+          "/Maze/80cmHighWall200cm/visible",
+          "/Maze/80cmHighWall200cm/visible",
+          "/Maze/80cmHighWall200cm/visible",
+          "/Maze/80cmHighWall200cm/visible",
+          "/Maze/80cmHighWall200cm/visible",
+          "/Maze/80cmHighWall200cm/visible",
+          "/Maze/80cmHighWall200cm/visible",
+          "/Maze/80cmHighWall200cm/visible",
+          "/Maze/80cmHighWall200cm/visible",
+          "/Maze/80cmHighWall200cm/visible",
+          "/Maze/80cmHighWall200cm/visible",
+          "/Maze/80cmHighWall200cm/visible",
+          "/Maze/80cmHighWall200cm/visible",
+          "/Maze/80cmHighWall200cm/visible",
+          "/Maze/80cmHighWall50cm/visible"
+        ]
+      },
+      "floors": {
+        "raw_floor_shapes": 6,
+        "final_floors": 6,
+        "skipped_floor_shapes": []
+      },
+      "targets": {
+        "missing_required_targets": [],
+        "extra_dummies": [
+          "/Score/Dummy/ctrlPt",
+          "/Score/Dummy/ctrlPt"
+        ]
+      },
+      "visual_targets": {
+        "missing_visual_targets": [],
+        "extra_visual_shapes": []
+      }
+    }
+  },
+  "robot": {
+    "name": "/RobotnikSummitXL",
+    "alias": "RobotnikSummitXL",
+    "handle": 177,
+    "type": "shape",
+    "pose": {
+      "x": -0.8249999999999976,
+      "y": 2.0749999999999984,
+      "z": 0.3089343011379242,
+      "alpha": 0.0014319801922408272,
+      "beta": -2.7538661188673663e-05,
+      "gamma": -1.5709646526853724
+    }
+  },
+  "targets": [
+    {
+      "name": "/Score/Dummy/Start_point_dummy",
+      "alias": "Start_point_dummy",
+      "handle": 171,
+      "type": "dummy",
+      "pose": {
+        "x": 7.475000000000002,
+        "y": -1.549999999999999,
+        "z": 0.0,
+        "alpha": -0.0,
+        "beta": 0.0,
+        "gamma": -0.0
+      }
+    },
+    {
+      "name": "/Score/Dummy/Point_dummy[0]",
+      "alias": "Point_dummy[0]",
+      "handle": 172,
+      "type": "dummy",
+      "pose": {
+        "x": 2.325000000000001,
+        "y": 1.050000000000001,
+        "z": 0.0,
+        "alpha": -0.0,
+        "beta": 0.0,
+        "gamma": -0.0
+      }
+    },
+    {
+      "name": "/Score/Dummy/Point_dummy[1]",
+      "alias": "Point_dummy[1]",
+      "handle": 173,
+      "type": "dummy",
+      "pose": {
+        "x": 6.450000000000003,
+        "y": 5.5000000000000036,
+        "z": 0.0,
+        "alpha": -0.0,
+        "beta": 0.0,
+        "gamma": -0.0
+      }
+    },
+    {
+      "name": "/Score/Dummy/Point_dummy[2]",
+      "alias": "Point_dummy[2]",
+      "handle": 174,
+      "type": "dummy",
+      "pose": {
+        "x": 3.575000000000002,
+        "y": 6.350000000000007,
+        "z": 0.0,
+        "alpha": -0.0,
+        "beta": 0.0,
+        "gamma": -0.0
+      }
+    },
+    {
+      "name": "/Score/Dummy/End_point_dummy",
+      "alias": "End_point_dummy",
+      "handle": 175,
+      "type": "dummy",
+      "pose": {
+        "x": -1.5249999999999992,
+        "y": -1.4749999999999994,
+        "z": 0.0,
+        "alpha": -0.0,
+        "beta": 0.0,
+        "gamma": -0.0
+      }
+    },
+    {
+      "name": "/Score/Dummy/Fake_point_dummy",
+      "alias": "Fake_point_dummy",
+      "handle": 176,
+      "type": "dummy",
+      "pose": {
+        "x": 3.500000000000002,
+        "y": 5.375000000000005,
+        "z": 0.0,
+        "alpha": -0.0,
+        "beta": 0.0,
+        "gamma": -0.0
+      }
+    }
+  ],
+  "visual_targets": [
+    {
+      "name": "/Score/Cuboid/Start_point_cuboid_score",
+      "alias": "Start_point_cuboid_score",
+      "handle": 161,
+      "type": "shape",
+      "pose": {
+        "x": 7.3999999999999995,
+        "y": -1.4999999999999991,
+        "z": 0.075,
+        "alpha": -0.0,
+        "beta": 0.0,
+        "gamma": -0.0
+      }
+    },
+    {
+      "name": "/Score/Cuboid/Point_cuboid_score[0]",
+      "alias": "Point_cuboid_score[0]",
+      "handle": 162,
+      "type": "shape",
+      "pose": {
+        "x": 2.3499999999999996,
+        "y": 1.0250000000000006,
+        "z": 0.075,
+        "alpha": -0.0,
+        "beta": 0.0,
+        "gamma": -0.0
+      }
+    },
+    {
+      "name": "/Score/Cuboid/Point_cuboid_score[1]",
+      "alias": "Point_cuboid_score[1]",
+      "handle": 163,
+      "type": "shape",
+      "pose": {
+        "x": 6.425000000000001,
+        "y": 5.475000000000003,
+        "z": 0.075,
+        "alpha": -0.0,
+        "beta": 0.0,
+        "gamma": -0.0
+      }
+    },
+    {
+      "name": "/Score/Cuboid/Point_cuboid_score[2]",
+      "alias": "Point_cuboid_score[2]",
+      "handle": 164,
+      "type": "shape",
+      "pose": {
+        "x": 3.5750000000000006,
+        "y": 6.350000000000003,
+        "z": 0.075,
+        "alpha": -0.0,
+        "beta": 0.0,
+        "gamma": -0.0
+      }
+    },
+    {
+      "name": "/Score/Cuboid/End_point_cuboid_score",
+      "alias": "End_point_cuboid_score",
+      "handle": 165,
+      "type": "shape",
+      "pose": {
+        "x": -1.5250000000000004,
+        "y": -1.4499999999999995,
+        "z": 0.075,
+        "alpha": -0.0,
+        "beta": 0.0,
+        "gamma": -0.0
+      }
+    },
+    {
+      "name": "/Score/Cuboid/Fake_point_cuboid_score",
+      "alias": "Fake_point_cuboid_score",
+      "handle": 166,
+      "type": "shape",
+      "pose": {
+        "x": 3.500000000000001,
+        "y": 5.375000000000003,
+        "z": 0.075,
+        "alpha": -0.0,
+        "beta": 0.0,
+        "gamma": -0.0
+      }
+    }
+  ],
+  "walls": [
+    {
+      "name": "/RoomBorders/HorizontalBorder/room_border_horizontal/240cmHighWall100cm",
+      "alias": "240cmHighWall100cm",
+      "handle": 73,
+      "type": "shape",
+      "pose": {
+        "x": 2.3500000041904103,
+        "y": 2.9999999999417915,
+        "z": 1.2000001668930054,
+        "alpha": 0.0,
+        "beta": 0.0,
+        "gamma": -1.5707963267950056
+      }
+    },
+    {
+      "name": "/RoomBorders/HorizontalBorder/room_border_horizontal/240cmHighWall100cm",
+      "alias": "240cmHighWall100cm",
+      "handle": 81,
+      "type": "shape",
+      "pose": {
+        "x": 2.3500000041904103,
+        "y": -1.8500000000582144,
+        "z": 1.2000001668930054,
+        "alpha": 0.0,
+        "beta": 0.0,
+        "gamma": -1.5707963267950056
+      }
+    },
+    {
+      "name": "/RoomBorders/HorizontalBorder/room_border_horizontal/240cmHighWall100cm",
+      "alias": "240cmHighWall100cm",
+      "handle": 89,
+      "type": "shape",
+      "pose": {
+        "x": 7.325000004190411,
+        "y": -1.8500000000582144,
+        "z": 1.2000001668930054,
+        "alpha": 0.0,
+        "beta": 0.0,
+        "gamma": -1.5707963267950056
+      }
+    },
+    {
+      "name": "/RoomBorders/HorizontalBorder/room_border_horizontal/240cmHighWall100cm",
+      "alias": "240cmHighWall100cm",
+      "handle": 97,
+      "type": "shape",
+      "pose": {
+        "x": 7.325000004190411,
+        "y": 7.949999999941793,
+        "z": 1.2000001668930054,
+        "alpha": 0.0,
+        "beta": 0.0,
+        "gamma": -1.5707963267950056
+      }
+    },
+    {
+      "name": "/RoomBorders/HorizontalBorder/room_border_horizontal/240cmHighWall400cm",
+      "alias": "240cmHighWall400cm",
+      "handle": 71,
+      "type": "shape",
+      "pose": {
+        "x": -0.12499999580958804,
+        "y": 2.999999999941793,
+        "z": 1.2000001668930054,
+        "alpha": 0.0,
+        "beta": 0.0,
+        "gamma": -1.5707963267950056
+      }
+    },
+    {
+      "name": "/RoomBorders/HorizontalBorder/room_border_horizontal/240cmHighWall400cm",
+      "alias": "240cmHighWall400cm",
+      "handle": 79,
+      "type": "shape",
+      "pose": {
+        "x": -0.12499999580958804,
+        "y": -1.850000000058213,
+        "z": 1.2000001668930054,
+        "alpha": 0.0,
+        "beta": 0.0,
+        "gamma": -1.5707963267950056
+      }
+    },
+    {
+      "name": "/RoomBorders/HorizontalBorder/room_border_horizontal/240cmHighWall400cm",
+      "alias": "240cmHighWall400cm",
+      "handle": 87,
+      "type": "shape",
+      "pose": {
+        "x": 4.850000004190412,
+        "y": -1.850000000058213,
+        "z": 1.2000001668930054,
+        "alpha": 0.0,
+        "beta": 0.0,
+        "gamma": -1.5707963267950056
+      }
+    },
+    {
+      "name": "/RoomBorders/HorizontalBorder/room_border_horizontal/240cmHighWall400cm",
+      "alias": "240cmHighWall400cm",
+      "handle": 95,
+      "type": "shape",
+      "pose": {
+        "x": 4.850000004190412,
+        "y": 7.949999999941795,
+        "z": 1.2000001668930054,
+        "alpha": 0.0,
+        "beta": 0.0,
+        "gamma": -1.5707963267950056
+      }
+    },
+    {
+      "name": "/RoomBorders/VerticalBorder/room_border_vertical/240cmHighWall100cm",
+      "alias": "240cmHighWall100cm",
+      "handle": 35,
+      "type": "shape",
+      "pose": {
+        "x": -2.0499999958095887,
+        "y": -1.4250000000582077,
+        "z": 1.2000001668930054,
+        "alpha": -0.0,
+        "beta": 0.0,
+        "gamma": -0.0
+      }
+    },
+    {
+      "name": "/RoomBorders/VerticalBorder/room_border_vertical/240cmHighWall100cm",
+      "alias": "240cmHighWall100cm",
+      "handle": 43,
+      "type": "shape",
+      "pose": {
+        "x": 7.800000004190419,
+        "y": -1.4250000000582077,
+        "z": 1.2000001668930054,
+        "alpha": -0.0,
+        "beta": 0.0,
+        "gamma": -0.0
+      }
+    },
+    {
+      "name": "/RoomBorders/VerticalBorder/room_border_vertical/240cmHighWall100cm",
+      "alias": "240cmHighWall100cm",
+      "handle": 51,
+      "type": "shape",
+      "pose": {
+        "x": 7.800000004190419,
+        "y": 3.4999999999417915,
+        "z": 1.2000001668930054,
+        "alpha": -0.0,
+        "beta": 0.0,
+        "gamma": -0.0
+      }
+    },
+    {
+      "name": "/RoomBorders/VerticalBorder/room_border_vertical/240cmHighWall100cm",
+      "alias": "240cmHighWall100cm",
+      "handle": 59,
+      "type": "shape",
+      "pose": {
+        "x": 2.875000004190412,
+        "y": 3.4999999999417915,
+        "z": 1.2000001668930054,
+        "alpha": -0.0,
+        "beta": 0.0,
+        "gamma": -0.0
+      }
+    },
+    {
+      "name": "/RoomBorders/VerticalBorder/room_border_vertical/240cmHighWall400cm",
+      "alias": "240cmHighWall400cm",
+      "handle": 37,
+      "type": "shape",
+      "pose": {
+        "x": -2.0499999958095882,
+        "y": 0.9999999999417925,
+        "z": 1.2000001668930054,
+        "alpha": -0.0,
+        "beta": 0.0,
+        "gamma": -0.0
+      }
+    },
+    {
+      "name": "/RoomBorders/VerticalBorder/room_border_vertical/240cmHighWall400cm",
+      "alias": "240cmHighWall400cm",
+      "handle": 45,
+      "type": "shape",
+      "pose": {
+        "x": 7.80000000419042,
+        "y": 0.9999999999417925,
+        "z": 1.2000001668930054,
+        "alpha": -0.0,
+        "beta": 0.0,
+        "gamma": -0.0
+      }
+    },
+    {
+      "name": "/RoomBorders/VerticalBorder/room_border_vertical/240cmHighWall400cm",
+      "alias": "240cmHighWall400cm",
+      "handle": 53,
+      "type": "shape",
+      "pose": {
+        "x": 7.80000000419042,
+        "y": 5.924999999941791,
+        "z": 1.2000001668930054,
+        "alpha": -0.0,
+        "beta": 0.0,
+        "gamma": -0.0
+      }
+    },
+    {
+      "name": "/RoomBorders/VerticalBorder/room_border_vertical/240cmHighWall400cm",
+      "alias": "240cmHighWall400cm",
+      "handle": 61,
+      "type": "shape",
+      "pose": {
+        "x": 2.8750000041904125,
+        "y": 5.924999999941791,
+        "z": 1.2000001668930054,
+        "alpha": -0.0,
+        "beta": 0.0,
+        "gamma": -0.0
+      }
+    },
+    {
+      "name": "/Maze/80cmHighWall100cm",
+      "alias": "80cmHighWall100cm",
+      "handle": 109,
+      "type": "shape",
+      "pose": {
+        "x": 2.6250000041904116,
+        "y": 0.9999999999417923,
+        "z": 0.4000001549720764,
+        "alpha": -0.0,
+        "beta": 0.0,
+        "gamma": -0.0
+      }
+    },
+    {
+      "name": "/Maze/80cmHighWall100cm",
+      "alias": "80cmHighWall100cm",
+      "handle": 115,
+      "type": "shape",
+      "pose": {
+        "x": 5.750000004190411,
+        "y": 0.24999999994179226,
+        "z": 0.4000001549720764,
+        "alpha": 0.0,
+        "beta": 0.0,
+        "gamma": -1.5707963267950034
+      }
+    },
+    {
+      "name": "/Maze/80cmHighWall100cm",
+      "alias": "80cmHighWall100cm",
+      "handle": 123,
+      "type": "shape",
+      "pose": {
+        "x": 5.725000004190414,
+        "y": 1.5999999999417922,
+        "z": 0.4000001549720764,
+        "alpha": -0.0,
+        "beta": 0.0,
+        "gamma": -0.0
+      }
+    },
+    {
+      "name": "/Maze/80cmHighWall100cm",
+      "alias": "80cmHighWall100cm",
+      "handle": 133,
+      "type": "shape",
+      "pose": {
+        "x": 5.025000004190409,
+        "y": 5.349999999941794,
+        "z": 0.4000001549720764,
+        "alpha": -0.0,
+        "beta": 0.0,
+        "gamma": -0.0
+      }
+    },
+    {
+      "name": "/Maze/80cmHighWall100cm",
+      "alias": "80cmHighWall100cm",
+      "handle": 137,
+      "type": "shape",
+      "pose": {
+        "x": 6.225000004190414,
+        "y": 5.799999999941792,
+        "z": 0.4000001549720764,
+        "alpha": 0.0,
+        "beta": 0.0,
+        "gamma": -1.5707963267950014
+      }
+    },
+    {
+      "name": "/Maze/80cmHighWall100cm",
+      "alias": "80cmHighWall100cm",
+      "handle": 141,
+      "type": "shape",
+      "pose": {
+        "x": 6.7000000041904135,
+        "y": -1.2750000000582071,
+        "z": 0.4000001549720764,
+        "alpha": -0.0,
+        "beta": 0.0,
+        "gamma": 3.141592653589584
+      }
+    },
+    {
+      "name": "/Maze/80cmHighWall100cm",
+      "alias": "80cmHighWall100cm",
+      "handle": 145,
+      "type": "shape",
+      "pose": {
+        "x": 5.45000000419041,
+        "y": 3.3999999999417927,
+        "z": 0.4000001549720764,
+        "alpha": -0.0,
+        "beta": 0.0,
+        "gamma": 0.6981317007977783
+      }
+    },
+    {
+      "name": "/Maze/80cmHighWall100cm",
+      "alias": "80cmHighWall100cm",
+      "handle": 151,
+      "type": "shape",
+      "pose": {
+        "x": -0.7499999958095886,
+        "y": -1.2000000000582076,
+        "z": 0.4000001549720764,
+        "alpha": -0.0,
+        "beta": 0.0,
+        "gamma": -0.0
+      }
+    },
+    {
+      "name": "/Maze/80cmHighWall200cm",
+      "alias": "80cmHighWall200cm",
+      "handle": 103,
+      "type": "shape",
+      "pose": {
+        "x": 0.6500000041904116,
+        "y": 1.9500000000000002,
+        "z": 0.4000000059604645,
+        "alpha": -0.0,
+        "beta": 0.0,
+        "gamma": -0.0
+      }
+    },
+    {
+      "name": "/Maze/80cmHighWall200cm",
+      "alias": "80cmHighWall200cm",
+      "handle": 105,
+      "type": "shape",
+      "pose": {
+        "x": 0.6500000041904116,
+        "y": 0.5000000000000002,
+        "z": 0.4000000059604645,
+        "alpha": -0.0,
+        "beta": 0.0,
+        "gamma": -0.0
+      }
+    },
+    {
+      "name": "/Maze/80cmHighWall200cm",
+      "alias": "80cmHighWall200cm",
+      "handle": 107,
+      "type": "shape",
+      "pose": {
+        "x": 1.7000000041904115,
+        "y": 0.5250000000000002,
+        "z": 0.4000000059604645,
+        "alpha": 0.0,
+        "beta": 0.0,
+        "gamma": -1.5707963267950056
+      }
+    },
+    {
+      "name": "/Maze/80cmHighWall200cm",
+      "alias": "80cmHighWall200cm",
+      "handle": 111,
+      "type": "shape",
+      "pose": {
+        "x": 2.750000004190409,
+        "y": 1.449999999999997,
+        "z": 0.4000000059604645,
+        "alpha": 0.0,
+        "beta": 0.0,
+        "gamma": -1.5707963267950056
+      }
+    },
+    {
+      "name": "/Maze/80cmHighWall200cm",
+      "alias": "80cmHighWall200cm",
+      "handle": 113,
+      "type": "shape",
+      "pose": {
+        "x": 6.700000004190413,
+        "y": 1.449999999999997,
+        "z": 0.4000000059604645,
+        "alpha": 0.0,
+        "beta": 0.0,
+        "gamma": -1.5707963267950056
+      }
+    },
+    {
+      "name": "/Maze/80cmHighWall200cm",
+      "alias": "80cmHighWall200cm",
+      "handle": 117,
+      "type": "shape",
+      "pose": {
+        "x": 5.750000004190407,
+        "y": -0.8000000000000002,
+        "z": 0.4000000059604645,
+        "alpha": -0.0,
+        "beta": 0.0,
+        "gamma": -0.0
+      }
+    },
+    {
+      "name": "/Maze/80cmHighWall200cm",
+      "alias": "80cmHighWall200cm",
+      "handle": 119,
+      "type": "shape",
+      "pose": {
+        "x": 6.725000004190414,
+        "y": 3.0,
+        "z": 0.4000000059604645,
+        "alpha": 0.0,
+        "beta": 0.0,
+        "gamma": -1.5707963267950056
+      }
+    },
+    {
+      "name": "/Maze/80cmHighWall200cm",
+      "alias": "80cmHighWall200cm",
+      "handle": 121,
+      "type": "shape",
+      "pose": {
+        "x": 3.425000004190411,
+        "y": 3.0,
+        "z": 0.4000000059604645,
+        "alpha": 0.0,
+        "beta": 0.0,
+        "gamma": -1.5707963267950056
+      }
+    },
+    {
+      "name": "/Maze/80cmHighWall200cm",
+      "alias": "80cmHighWall200cm",
+      "handle": 125,
+      "type": "shape",
+      "pose": {
+        "x": 3.97500000419041,
+        "y": 5.799999999999997,
+        "z": 0.4000000059604645,
+        "alpha": 0.0,
+        "beta": 0.0,
+        "gamma": -1.5707963267950056
+      }
+    },
+    {
+      "name": "/Maze/80cmHighWall200cm",
+      "alias": "80cmHighWall200cm",
+      "handle": 127,
+      "type": "shape",
+      "pose": {
+        "x": 3.950000004190403,
+        "y": 5.499999999999993,
+        "z": 0.4000000059604645,
+        "alpha": -0.0,
+        "beta": 0.0,
+        "gamma": 3.1415926535895813
+      }
+    },
+    {
+      "name": "/Maze/80cmHighWall200cm",
+      "alias": "80cmHighWall200cm",
+      "handle": 129,
+      "type": "shape",
+      "pose": {
+        "x": 3.950000004190403,
+        "y": 6.274999999999998,
+        "z": 0.4000000059604645,
+        "alpha": -0.0,
+        "beta": 0.0,
+        "gamma": 3.1415926535895813
+      }
+    },
+    {
+      "name": "/Maze/80cmHighWall200cm",
+      "alias": "80cmHighWall200cm",
+      "handle": 135,
+      "type": "shape",
+      "pose": {
+        "x": 5.725000004190403,
+        "y": 4.924999999999985,
+        "z": 0.4000000059604645,
+        "alpha": -0.0,
+        "beta": 0.0,
+        "gamma": 1.5707963267945855
+      }
+    },
+    {
+      "name": "/Maze/80cmHighWall200cm",
+      "alias": "80cmHighWall200cm",
+      "handle": 139,
+      "type": "shape",
+      "pose": {
+        "x": 6.700000004190402,
+        "y": 5.874999999999982,
+        "z": 0.4000000059604645,
+        "alpha": 0.0,
+        "beta": 0.0,
+        "gamma": -4.1450176624380255e-13
+      }
+    },
+    {
+      "name": "/Maze/80cmHighWall200cm",
+      "alias": "80cmHighWall200cm",
+      "handle": 143,
+      "type": "shape",
+      "pose": {
+        "x": 4.825000004190412,
+        "y": -0.39999999999999997,
+        "z": 0.4000000059604645,
+        "alpha": 0.0,
+        "beta": 0.0,
+        "gamma": -2.007128639793613
+      }
+    },
+    {
+      "name": "/Maze/80cmHighWall200cm",
+      "alias": "80cmHighWall200cm",
+      "handle": 149,
+      "type": "shape",
+      "pose": {
+        "x": -1.0999999958095878,
+        "y": 0.3,
+        "z": 0.4000000059604645,
+        "alpha": 0.0,
+        "beta": 0.0,
+        "gamma": -1.0471975511966682
+      }
+    },
+    {
+      "name": "/Maze/80cmHighWall50cm",
+      "alias": "80cmHighWall50cm",
+      "handle": 147,
+      "type": "shape",
+      "pose": {
+        "x": 0.9250000041888893,
+        "y": -0.42500000005820765,
+        "z": 0.4000001549720764,
+        "alpha": -0.0,
+        "beta": 0.0,
+        "gamma": 1.5707963267950125
+      }
+    }
+  ],
+  "floors": [
+    {
+      "name": "/Floors/Floor[0]",
+      "alias": "Floor[0]",
+      "handle": 17,
+      "type": "shape",
+      "pose": {
+        "x": 5.375,
+        "y": 0.5750000000000001,
+        "z": -0.10000000149011612,
+        "alpha": -0.0,
+        "beta": 0.0,
+        "gamma": -0.0
+      }
+    },
+    {
+      "name": "/Floors/Floor[1]",
+      "alias": "Floor[1]",
+      "handle": 19,
+      "type": "shape",
+      "pose": {
+        "x": 5.375,
+        "y": 5.525,
+        "z": -0.10000000149011612,
+        "alpha": -0.0,
+        "beta": 0.0,
+        "gamma": -0.0
+      }
+    },
+    {
+      "name": "/Floors/Floor[2]",
+      "alias": "Floor[2]",
+      "handle": 21,
+      "type": "shape",
+      "pose": {
+        "x": 0.375,
+        "y": 0.5750000000000001,
+        "z": -0.10000000149011612,
+        "alpha": -0.0,
+        "beta": 0.0,
+        "gamma": -0.0
+      }
+    },
+    {
+      "name": "/Floors/Floor[3]",
+      "alias": "Floor[3]",
+      "handle": 18,
+      "type": "shape",
+      "pose": {
+        "x": 5.375,
+        "y": 0.5750000000000001,
+        "z": -0.0990000069141388,
+        "alpha": -0.0,
+        "beta": 0.0,
+        "gamma": -0.0
+      }
+    },
+    {
+      "name": "/Floors/Floor[4]",
+      "alias": "Floor[4]",
+      "handle": 20,
+      "type": "shape",
+      "pose": {
+        "x": 5.375,
+        "y": 5.525,
+        "z": -0.0990000069141388,
+        "alpha": -0.0,
+        "beta": 0.0,
+        "gamma": -0.0
+      }
+    },
+    {
+      "name": "/Floors/Floor[5]",
+      "alias": "Floor[5]",
+      "handle": 22,
+      "type": "shape",
+      "pose": {
+        "x": 0.375,
+        "y": 0.5750000000000001,
+        "z": -0.0990000069141388,
+        "alpha": -0.0,
+        "beta": 0.0,
+        "gamma": -0.0
+      }
+    }
+  ]
+}
